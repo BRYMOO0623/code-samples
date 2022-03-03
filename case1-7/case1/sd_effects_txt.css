@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 1
+   
+   Star Dust Stories Design Styles
+   Author: 
+   Date:      
+
+   Filename: sd_effects.css
+
+*/
+
+/* HTML Styles */
+background-image:sd_back1.png;
+background-image:sd_back2.png;
+circle:(40%,70%),(151,151,151),50%;
+circle:(80%,40%),(0,0,0),30%;
+grad:(10%,20%),(0,0,0),45%;
+grad:(5%,90%,10%), white, 15%,(0,0,0),40%
+
+
+/* Body Styles */
+
+horizontel-offset:30px;
+vertical-offset:0px;
+blur;45px;
+
+
+/* Navigation List Styles */
+border= rgb(211,211,255);
+
+
+
+
+
+/* Section Left Styles */
+section#leftColumn{
+	clear:left;
+	float:left;
+	padding: 1.5em;
+	width: 33%
+}
+
+
+
+/* Footer Styles */
+
+footer{
+	clear:left;
+}
+footer > nav.verticalNavigation{
+	float:left;
+	width:22%
+}
+footer>section#contactInfo{
+	float:left;
+	width34%;
+}
+background-color:rgb(71,52,29);
+footer:after{
+	clear: both;
+	content:"";
+	display:table;
+}
