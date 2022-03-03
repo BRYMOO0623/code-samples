@@ -1,0 +1,63 @@
+<html>
+<head>
+   <!--
+      CIS213 Unit 5, Graded Exercise 2
+      Author: <Your Name Here> 
+      Date:   <Date Here>
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Unit 5 Graded Exercise 2</title>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Your Name, Resturant Calculator
+      </h1>
+   </header>
+
+   <article>
+      <div id="results">
+          <p id="resultsExpl"></p>
+      </div>
+      <form>
+          <fieldset>
+            <label for="mValue" id="nValue">
+              Enter the purchase price:
+            </label>
+            <input type="num" id="purchase" />
+			
+			<label for="mValue" id="oValue">
+              Tip%:
+            </label>
+            <input type="num" id="tip" />
+			
+			<label for="mValue" id="pValue">
+			  # of people
+            </label>
+            <input type="num" id="people" />
+          </fieldset>
+          <fieldset>
+            <button type="button" id="button" onclick="convert()">Submit</button>
+          </fieldset>
+      </form>
+   </article>
+   <script>
+      function convert(){
+			var price = parseInt(document.getElementById("purchase").value);
+			console.log(price);
+			var tip = parseInt(document.getElementById("tip").value);
+			var people = parseInt(document.getElementById("people").value);
+			var tipPercent = tip/100;
+			console.log(tipPercent);
+			var tipamount = price * tipPercent;
+			var total = price + tipamount;
+			var perPerson = total / people;
+			document.writeln("Tip amount: " + tipamount);
+			document.writeln("Total Bill: " + total);
+			document.writeln("Total per Person: " + perPerson);
+      }
+   </script>
+</body>
+</html>
